@@ -75,7 +75,7 @@ html {
 }
 @keyframes box-rotate {
     0% {
-     tranform: rotate(0deg);   
+     transform: rotate(0deg);   
     }
     100% {
         transform: rotate(360deg);
@@ -87,7 +87,7 @@ html {
     top: 21em;
     height: 25.5em;
     -webkit-animation: scale 30s ease linear infinite alternate;
-    animation: scale 30s ease linear infinite alternate;
+    animation: scale 30s ease infinite alternate;
 }
 @-webkit-keyframes scale {
     
@@ -132,7 +132,7 @@ html {
 }
 @keyframes box-rotate {
     0% {
-     tranform: rotate(0deg);   
+     transform: rotate(0deg);   
     }
     100% {
         transform:  rotate(8deg);
@@ -304,6 +304,7 @@ title {
     height: 25em;
     text-align: right;
     opacity: 100;
+}
 }
 
     
