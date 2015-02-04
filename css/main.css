@@ -17,7 +17,7 @@ html {
 }
 
  .background {
-    background-color: white;
+    height: 100vh;
     height: 100vh;
     overflow: hidden;
 }
@@ -25,26 +25,52 @@ html {
     position:absolute;
     top:0;
 }
+.brand {
+    position: absolute;
+    top:0;
+    left:-1em;
+    transition: all .25s linear;
+    width: 20em;
+    margin: 1em;
+    z-index: 1;
+}
+.brand a { 
+    color: #0074D9;
+    text-decoration: none;
+}
+.brand:hover { 
+    transform: scale(1.2);
+    transition: all 2s linear;
+}
+.brand:active{
+    color: #0074D9;
+    transform: scale(1.5);
+}
+
+.brand-current:visited{
+    color:white;
+}
 .paper {
     position: absolute;
     top:12em;
     text-align: center;
     height:25em;
     left:2em;
+    z-index: -20;
 }
 .logo {
     position: absolute;
     top:12em;
     text-align: center;
-    -webkit-animation: box-rotate 5s ease-in-out infinite alternate;
-    animation: box-rotate 5s ease-in-out infinite alternate;
+    -webkit-animation: box-rotate 2s ease-in-out infinite alternate;
+    animation: box-rotate 2s ease-in-out infinite alternate;
 }
 @-webkit-keyframes box-rotate {
     0% {
      tranform: rotate(0deg);   
     }
     100% {
-        transform: rotate(50deg) scale(1.5);
+        transform: rotate(360deg);
     }
 }
 @keyframes box-rotate {
@@ -52,9 +78,10 @@ html {
      tranform: rotate(0deg);   
     }
     100% {
-        transform: rotate(50deg) scale(1.5);
+        transform: rotate(360deg);
     }
 }
+
 .steve { 
     position: absolute;
     top: 21em;
@@ -91,7 +118,7 @@ html {
     position: absolute;
     left: 10em;
     top:31.7em;
-    height: 9vh;
+    height: 4.4em;
     -webkit-animation: box-rotate 1s ease-in-out infinite alternate;
     animation: box-rotate 1s ease infinite alternate;
 }
@@ -118,14 +145,15 @@ html {
     width: 4em;
     border-radius: 50%;
     line-height: 2em;
-    background-color: green;
+    background-color: #2A0C59;
     display: inline-block;
     text-align: center;
     transition: all .25s linear;
     color: white;
     margin: 1em;
+    z-index: 20;
 }
-a:hover {
+button a:hover {
     transition: all .5s linear;
     background-color: white;
     color: black;
@@ -139,7 +167,14 @@ a:hover {
     text-align: right;
     opacity: 0;
 }
+.info {
+    position: absolute;
+    top:55em;
+    display: inline-block;
+    overflow: hidden;
+}
 @media only screen and (min-width: 25em) {
+
 .logo {
     position: absolute;
     top:1em;
@@ -163,11 +198,11 @@ a:hover {
 .button {
     position: absolute;
     left: 50%;
-    top: 45em;
+    top: 40em;
     width: 4em;
     border-radius: 50%;
     line-height: 2em;
-    background-color: green;
+    background-color:  #2A0C59;
     display: inline-block;
     text-align: center;
     transition: all .25s linear;
@@ -179,31 +214,96 @@ a:hover {
     background-color: white;
     color: black;
 }
-.title { 
-    position:absolute;
-    top:0;
-    right:0;
-    height: 10em;
+title {
+    width: 40em;
 }
 }    
+
 @media only screen and (min-width: 38em) {
 .trashcan {
     position: absolute;
-    bottom: -16em;
+    bottom: -12em;
     right: 0em;
     height: 25em;
     text-align: right;
     opacity: 100;
 }  
+.brand {
+    position: absolute;
+    top:0;
+    transition: all .25s linear;
+    width: 30em;
+    margin: 1em;
+    transform: rotate(-30deg);
+}
+.brand a { 
+    color: #0074D9;
+    text-decoration: none;
+}
+.brand:hover { 
+    transform: scale(1.2);
+    transition: all 2s linear;
+}
+.brand:active{
+    color: #0074D9;
+    transform: scale(1.5);
+}
+
+.brand-current:visited{
+    color:white;
+}
 
 }  
 @media only screen and (min-width: 60em) {
- .title { 
+    
+.title { 
     position:absolute;
     top:0;
     right:0;
     height: 30em;
 }
+.brand {
+    position: absolute;
+    top:0;
+    transition: all .25s linear;
+    width: 30em;
+    left:50%;
+    margin: 1em;
+    transform: scale(1.5);
+}
+.brand a { 
+    color: #0074D9;
+    text-decoration: none;
+}
+.brand:hover { 
+    transform: scale(1.2);
+    transition: all 2s linear;
+}
+.brand:active{
+    opacity: 0;
+    transition:  1s alternate;
+}
+
+.brand-current:visited{
+    color:white;
+}
+.steve { 
+    position: absolute;
+    top: 17em;
+}
+.pen {
+    position: absolute;
+    left: 10em;
+    top:27.7em;
+    height: 4.4em;
+}
+.trashcan {
+    position: absolute;
+    bottom: -10em;
+    right: 0em;
+    height: 25em;
+    text-align: right;
+    opacity: 100;
 }
 
     
