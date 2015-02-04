@@ -177,6 +177,12 @@ button a:hover {
     position: absolute;
     bottom: -3em;
 }
+.type {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0;
+    width: 20em;
+}
 @media only screen and (min-width: 25em) {
 
 .logo {
