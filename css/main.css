@@ -173,6 +173,10 @@ button a:hover {
     display: inline-block;
     overflow: hidden;
 }
+.message { 
+    position: absolute;
+    bottom: -3em;
+}
 @media only screen and (min-width: 25em) {
 
 .logo {
