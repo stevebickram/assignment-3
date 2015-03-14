@@ -186,8 +186,8 @@ background-color: yellow;
 }
 .button {
     position: absolute;
-    top:60%;
-    left: 40%;
+    top:5%;
+    right: 5%;
     width: 4em;
     border-radius: 50%;
     line-height: 2em;
@@ -253,8 +253,8 @@ button a:hover {
 }
 .button {
     position: absolute;
-    left: 50%;
-    top: 40em;
+    top:5%;
+    right: 5%;
     width: 4em;
     border-radius: 50%;
     line-height: 2em;
