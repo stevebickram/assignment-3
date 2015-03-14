@@ -25,6 +25,52 @@ html {
     position:absolute;
     top:0;
 }
+.box {
+background-color: yellow;
+  transform: translateY(-50%);
+    max-height: 0;
+    transition: all 1s linear;
+  color:  #2A0C59;
+  text-align: center;
+        overflow: hidden;
+
+}
+.js-collapse {    
+    max-height: 15em;
+}
+.nav {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+}
+.nav ul {
+    padding: 0;
+}
+
+.nav a { 
+    color: #e19952;
+    text-decoration: none;
+}
+
+.nav li {
+    display: inline-block;
+    background-color: white;
+    margin:1em 0 2em 1em;
+    padding: 0;
+    text-align: right;
+}
+
+.nav li a:hover{ 
+    color:black;
+}
+
+.nav li a:active{
+    color: black;
+}
+
+.nav-current:visited{
+    color:black;
+}
 .brand {
     position: absolute;
     top:0;
