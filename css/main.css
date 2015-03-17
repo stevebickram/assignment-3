@@ -111,6 +111,32 @@ background-color: yellow;
     -webkit-animation: box-rotate 2s ease-in-out infinite alternate;
     animation: box-rotate 2s ease-in-out infinite alternate;
 }
+.intro {
+    position: relative;
+    top: 30em;
+}
+.image-pack-1 {
+    width: 650px;
+}
+.image-pack-2 {
+    width: 200px;
+}
+    
+.image-4 {
+    width: 60px;
+}
+.image-5 {
+    width: 300px;
+}
+.image-6 { 
+    width: 600px;
+    overflow: hidden;
+    margin:none;
+}
+.image-3 { 
+    width: 290px;
+}
+
 @-webkit-keyframes box-rotate {
     0% {
      tranform: rotate(0deg);   
