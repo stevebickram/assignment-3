@@ -18,17 +18,18 @@ html {
 
  .background {
     height: 100vh;
-    height: 100vh;
     overflow: hidden;
 }
 .title { 
     position:absolute;
-    top:0;
+    top:25em;
 }
 .box {
     background-color: yellow;
     transform: translateY(-50%);
     max-height: 0;
+    position: relative;
+    top:3em;
     transition: all 1s linear;
     color:  #2A0C59;
     text-align: center;
@@ -36,7 +37,7 @@ html {
 
 }
 .js-collapse {    
-    max-height: 30em;
+    max-height: 100em;
 }
 .nav {
     list-style-type: none;
@@ -73,7 +74,7 @@ html {
 }
 .brand {
     position: absolute;
-    top:0;
+    top:5em;
     left:-1em;
     transition: all .25s linear;
     width: 20em;
@@ -98,7 +99,7 @@ html {
 }
 .paper {
     position: absolute;
-    top:12em;
+    top:20em;
     text-align: center;
     height:25em;
     left:2em;
@@ -106,7 +107,7 @@ html {
 }
 .logo {
     position: absolute;
-    top:12em;
+    top:20em;
     text-align: center;
     -webkit-animation: box-rotate 2s ease-in-out infinite alternate;
     animation: box-rotate 2s ease-in-out infinite alternate;
@@ -115,27 +116,29 @@ html {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 38em;
+    top: 27em;
     width: 15.5em;
 }
 .intro-banner {
     width: 100%;
     position: relative;
-    top: 37em;
+    top: 25em;
 }
 .gallery {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 40em;
+    top:28em;
     max-width: 1000px;
+    text-align: center;
 }
 .image-pack-1 {
     width: 600px;
 }
 .image-pack-2 {
-    margin-left: 6.5em;
-    margin-right: -1em;
+    width: 600px;
+    margin-left: 0;
+    
 }
 .image-3 { 
     width: 295px;
@@ -155,10 +158,10 @@ html {
     margin:none;
 }
 .image-8 {
-    width: 650px;
+    width: 300px;
 }
 .image-9 {
-        width: 650px;
+        width: 300px;
 
 }
 .image-10 {
@@ -167,7 +170,7 @@ html {
 .contact {
     overflow: hidden;
     position: relative;
-    top: 42em;
+    top: 35em;
     margin-left: auto;
     margin-right: auto;
     width: 50em;
@@ -192,7 +195,7 @@ html {
 
 .steve { 
     position: absolute;
-    top: 21em;
+    top: 25em;
     height: 25.5em;
     -webkit-animation: scale 30s ease linear infinite alternate;
     animation: scale 30s ease infinite alternate;
@@ -220,12 +223,12 @@ html {
 }
 .writting {
     position: absolute;
-    top:10em;   
+    top:14em;   
 }
 .pen {
     position: absolute;
     left: 10em;
-    top:31.7em;
+    top:36em;
     height: 4.4em;
     -webkit-animation: box-rotate 1s ease-in-out infinite alternate;
     animation: box-rotate 1s ease infinite alternate;
@@ -335,12 +338,19 @@ a:hover {
 title {
     width: 40em;
 }
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 28em;
+    width: 15.5em;
+}    
 }    
 
 @media only screen and (min-width: 38em) {
 .trashcan {
     position: absolute;
-    bottom: -12em;
+    bottom: -27em;
     right: 0em;
     height: 25em;
     text-align: right;
@@ -374,44 +384,58 @@ title {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 38em;
-    width: 15.5em;
+    top:1em;
+    width: 25.5em;
 }
 .intro-banner {
     width: 100%;
     position: relative;
-    top: 37em;
 }
-.gallery {
+.intro {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 40em;
+    top: 27em;
+    width: 45.5em;
+}
+    .gallery {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
     max-width: 1000px;
+    text-align: center;
 }
 .image-pack-1 {
     width: 600px;
+    margin-right: 5em;
 }
 .image-pack-2 {
-    margin-left: 6.5em;
     margin-right: -1em;
+    margin-left: -3em;
 }
+
 .image-3 { 
     width: 295px;
-    margin: 1.5em 6em;
 }   
 .image-4 {
     width: 250px;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-top: 1.4em;
 }
 .image-5 {
-    width: 300px;
+    width: 250px;
+    position: relative;
+    left: -1.5em;
 }
 .image-6 { 
     width: 600px;
     overflow: hidden;
     margin:none;
+}
+.image-7 {
+    width: 20em;
+}
+.image-9 {
 }
 .image-10 {
     width: 600px;
@@ -419,18 +443,16 @@ title {
 .contact {
     overflow: hidden;
     position: relative;
-    top: 42em;
     margin-left: auto;
     margin-right: auto;
     width: 50em;
 }
-
 }  
 @media only screen and (min-width: 60em) {
     
 .title { 
     position:absolute;
-    top:0;
+    top:8em;
     right:0;
     height: 30em;
 }
@@ -471,11 +493,23 @@ title {
 }
 .trashcan {
     position: absolute;
-    bottom: -10em;
+    bottom: -18em;
     right: 0em;
     height: 25em;
     text-align: right;
     opacity: 100;
+}   
+.intro {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 23em;
+    width: 45.5em;
+}
+.intro-banner {
+    width: 100%;
+    position: relative;
+    top: 20em;
 }
 }
 
