@@ -26,17 +26,17 @@ html {
     top:0;
 }
 .box {
-background-color: yellow;
-  transform: translateY(-50%);
+    background-color: yellow;
+    transform: translateY(-50%);
     max-height: 0;
     transition: all 1s linear;
-  color:  #2A0C59;
-  text-align: center;
-        overflow: hidden;
+    color:  #2A0C59;
+    text-align: center;
+    overflow: hidden;
 
 }
 .js-collapse {    
-    max-height: 15em;
+    max-height: 30em;
 }
 .nav {
     list-style-type: none;
@@ -116,21 +116,35 @@ background-color: yellow;
     margin-right: auto;
     position: relative;
     top: 38em;
-    width: 800px;
+    width: 15.5em;
+}
+.intro-banner {
+    width: 100%;
+    position: relative;
+    top: 37em;
 }
 .gallery {
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     top: 40em;
+    max-width: 1000px;
 }
 .image-pack-1 {
-    width: 650px;
+    width: 600px;
 }
 .image-pack-2 {
-    width: 200px;
+    margin-left: 6.5em;
+    margin-right: -1em;
 }
-    
+.image-3 { 
+    width: 295px;
+    margin: 1.5em 6em;
+}   
 .image-4 {
-    width: 60px;
+    width: 250px;
+    margin-left: 3em;
+    margin-top: 1.4em;
 }
 .image-5 {
     width: 300px;
@@ -140,8 +154,15 @@ background-color: yellow;
     overflow: hidden;
     margin:none;
 }
-.image-3 { 
-    width: 290px;
+.image-8 {
+    width: 650px;
+}
+.image-9 {
+        width: 650px;
+
+}
+.image-10 {
+    width: 650px;
 }
 .contact {
     overflow: hidden;
@@ -149,6 +170,7 @@ background-color: yellow;
     top: 42em;
     margin-left: auto;
     margin-right: auto;
+    width: 50em;
 }
 
 @-webkit-keyframes box-rotate {
@@ -347,6 +369,60 @@ title {
 
 .brand-current:visited{
     color:white;
+}
+    .intro {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 38em;
+    width: 15.5em;
+}
+.intro-banner {
+    width: 100%;
+    position: relative;
+    top: 37em;
+}
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 40em;
+    max-width: 1000px;
+}
+.image-pack-1 {
+    width: 600px;
+}
+.image-pack-2 {
+    margin-left: 6.5em;
+    margin-right: -1em;
+}
+.image-3 { 
+    width: 295px;
+    margin: 1.5em 6em;
+}   
+.image-4 {
+    width: 250px;
+    margin-left: 3em;
+    margin-top: 1.4em;
+}
+.image-5 {
+    width: 300px;
+}
+.image-6 { 
+    width: 600px;
+    overflow: hidden;
+    margin:none;
+}
+.image-10 {
+    width: 600px;
+}
+.contact {
+    overflow: hidden;
+    position: relative;
+    top: 42em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
 }
 
 }  
