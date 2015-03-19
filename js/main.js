@@ -1,3 +1,4 @@
+$('.nav').localScroll();
 var $btnCollapse = $('.btn-collapse-expand')
 var $box = $('.box');
 
