@@ -112,26 +112,86 @@ html {
     -webkit-animation: box-rotate 2s ease-in-out infinite alternate;
     animation: box-rotate 2s ease-in-out infinite alternate;
 }
+.section1 { 
+    position: relative;
+    top:-13em;
+}
 .intro {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 34em;
+    top: 36em;
     width: 15.5em;
+    opacity: 0;
+    transition: all 200ms ease-in;
 }
+.js-intro-animate {
+    opacity: 1;
+}
+
 .intro-banner {
     width: 100%;
     position: relative;
-    top: 33em;
+    top: 35em;
 }
+.crow {
+    width:3em;
+    position: relative;
+    left: -2em;
+    top:27em;
+}
+
+.js-crow-animate {
+    animation: fly 5s linear;
+}
+@-webkit-keyframes fly {
+    
+0% {
+    -webkit-top: 0;
+    -webkit-left: 0;
+    top: 0;
+    left: 0;
+}
+100% {
+    -webkit-top: 6em;
+    -webkit-left: 4em;
+    left: 4em;
+    top :6em;
+}}
+@keyframes fly {
+    
+    
+0% {
+    -webkit-top: 0;
+    -webkit-left: 0;
+    top: 0;
+    left: 0;
+}
+100% {
+    -webkit-top: 6em;
+    -webkit-left: 4em;
+    left: 4em;
+    top :6em;
+}}
+
 .gallery {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top:33em;
+    top:26em;
     max-width: 1000px;
     text-align: center;
+    opacity: 0;
+    transition: all 200ms ease-in;
 }
+.js-gallery-animate {
+    opacity: 1;
+}
+.gallery-banner {
+    width: 100%;
+    position: relative;
+    top: 25em;
+}  
 .image-pack-1 {
     width: 300px;
 }
@@ -336,8 +396,9 @@ title {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 35em;
+    top: 36em;
     width: 15.5em;
+    padding-bottom: 2em;
 }
 .image-2 {
     padding-left: 9em;
@@ -389,21 +450,17 @@ title {
 .intro-banner {
     width: 100%;
     position: relative;
+    top: 35em;
 }
 .intro {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 34em;
+    top: 36em;
     width: 45.5em;
 }
 .gallery {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top:3em;
-    max-width: 1000px;
-    text-align: center;
+padding-top: 2em;
 }
 .image-pack-1 {
     width: 600px;
@@ -494,6 +551,7 @@ title {
 .trashcan {
     position: absolute;
     bottom: -18em;
+    top:35em;
     right: 0em;
     height: 25em;
     text-align: right;
@@ -503,13 +561,14 @@ title {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 23em;
+    top: 33em;
     width: 45.5em;
+    padding-bottom: 6em;
 }
 .intro-banner {
     width: 100%;
     position: relative;
-    top: 20em;
+    top: 31em;
 }
 }
 
