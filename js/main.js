@@ -18,9 +18,24 @@ $gallery.waypoint(function () {
     $gallery.addClass('js-gallery-animate');
 }, { offset: '50%'});
 
-var $btnCollapse2 = $('.btn-collapse-expand-2')
-var $box2 = $('.box2');
+var $contact = $('.contact');
 
-$btnCollapse2.on('click', function () {
-    $box2.toggleClass('js-collapse-2');    
-});;
+$contact.waypoint(function () {
+    $contact.addClass('js-contact-animate');
+}, { offset: '50%'});
+
+var $btnShowHide = $('.btn-show-hide');
+var $contact = $('.contact');
+
+$btnShowHide.on('click', function () {
+   $contact.toggleClass('js-contact-show');
+    
+});
+
+var $btnBounce = $('.btn-bounce');
+var $ministeve = $('.mini-steve');
+
+$btnBounce.on('click', function () {
+$ministeve.addClass('js-steve-animate');
+
+});

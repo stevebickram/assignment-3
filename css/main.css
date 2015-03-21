@@ -29,27 +29,13 @@ html {
     transform: translateY(-50%);
     max-height: 0;
     position: relative;
-    top:0;
-    transition: all 1s linear;
-    text-align: center;
-    overflow: hidden;
-
-}
-.box2 {
-    background-color: white;
-    transform: translateY(-50%);
-    max-height: 0;
-    position: relative;
-    top: 10em;
+    top:3em;
     transition: all 1s linear;
     text-align: center;
     overflow: hidden;
 
 }
 .js-collapse {    
-    max-height: 100em;
-}
-.js-collapse-2 {    
     max-height: 100em;
 }
 .nav {
@@ -84,31 +70,6 @@ html {
 
 .nav-current:visited{
     color:black;
-}
-.brand {
-    position: absolute;
-    top:5em;
-    left:-1em;
-    transition: all .25s linear;
-    width: 20em;
-    margin: 1em;
-    z-index: 1;
-}
-.brand a { 
-    color: #0074D9;
-    text-decoration: none;
-}
-.brand:hover { 
-    transform: scale(1.2);
-    transition: all 2s linear;
-}
-.brand:active{
-    color: #0074D9;
-    transform: scale(1.5);
-}
-
-.brand-current:visited{
-    color:white;
 }
 .paper {
     position: absolute;
@@ -147,46 +108,6 @@ html {
     position: relative;
     top: 35em;
 }
-.crow {
-    width:3em;
-    position: relative;
-    left: -2em;
-    top:27em;
-}
-
-.js-crow-animate {
-    animation: fly 5s linear;
-}
-@-webkit-keyframes fly {
-    
-0% {
-    -webkit-top: 0;
-    -webkit-left: 0;
-    top: 0;
-    left: 0;
-}
-100% {
-    -webkit-top: 6em;
-    -webkit-left: 4em;
-    left: 4em;
-    top :6em;
-}}
-@keyframes fly {
-    
-    
-0% {
-    -webkit-top: 0;
-    -webkit-left: 0;
-    top: 0;
-    left: 0;
-}
-100% {
-    -webkit-top: 6em;
-    -webkit-left: 4em;
-    left: 4em;
-    top :6em;
-}}
-
 .gallery {
     margin-left: auto;
     margin-right: auto;
@@ -237,28 +158,31 @@ html {
 .contact {
     overflow: hidden;
     position: relative;
-    top: 35em;
-    margin-left: auto;
+    top: 30em;
+    max-width: 500px;
+    margin-left: 2em;
     margin-right: auto;
-    width: 50em;
+    width: 20em;
+    opacity: 0;
+    transition: all .5s linear;
 }
 
-@-webkit-keyframes box-rotate {
-    0% {
-     tranform: rotate(0deg);   
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.js-contact-show {
+    opacity: 1;
 }
-@keyframes box-rotate {
-    0% {
-     transform: rotate(0deg);   
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+.button-2 {
+    position: relative;
+    top: 40em;
+    left:5em;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color:white; 
+    color: black;
+    background-color: white;
+    width:18em;
+    height: 10em;
 }
+
 
 .steve { 
     position: absolute;
@@ -334,25 +258,6 @@ button a:hover {
     background-color: #2A0C59;
     color: black;
 }
-.button-2 {
-    width: 25em;
-    position: relative;
-    top: 40em;
-    left:12%;
-    border-top-left-radius: 30%;
-    border-top-right-radius: 30%;
-    line-height: 0;
-    background-color: #2A0C59;
-    display: inline-block;
-    text-align: center;
-    transition: all .25s linear;
-    z-index: 20;
-}
-button-2 a:hover {
-    transition: all .5s linear;
-    background-color: #2A0C59;
-    color: black;
-}
 
 .trashcan {
     position: absolute;
@@ -378,6 +283,20 @@ button-2 a:hover {
     padding: 0;
     width: 20em;
 }
+.mini-steve {
+    position: relative;
+    top: 16em;
+    left: 52em;
+    width: 10em;
+    opacity:0;
+    display: none;
+}
+.js-steve-animate { 
+    opacity: 1;
+    
+}
+    
+    
 @media only screen and (min-width: 25em) {
 
 .logo {
@@ -419,21 +338,17 @@ button a:hover {
     background-color: #2A0C59;
     color: black;
 }
-.button-2 {
-    width: 25em;
-    border: 0;
-    line-height: 0;
-    background-color: #2A0C59;
-    display: inline-block;
-    text-align: center;
-    transition: all .25s linear;
-    margin-left: 18em;
-    z-index: 20;
-}
-button-2 a:hover {
+
+.contact {
+    overflow: hidden;
+    position: relative;
+    top:18em;
+    left:3em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
     transition: all .5s linear;
-    background-color: #2A0C59;
-    color: black;
+    opacity:0;
 }
 title {
     width: 40em;
@@ -468,31 +383,6 @@ title {
     text-align: right;
     opacity: 100;
 }  
-.brand {
-    position: absolute;
-    top:0;
-    transition: all .25s linear;
-    width: 30em;
-    margin: 1em;
-    transform: rotate(-30deg);
-}
-.brand a { 
-    color: #0074D9;
-    text-decoration: none;
-}
-.brand:hover { 
-    transform: scale(1.2);
-    transition: all 2s linear;
-}
-.brand:active{
-    color: #0074D9;
-    transform: scale(1.5);
-}
-
-.brand-current:visited{
-    color:white;
-}
-
 .intro-banner {
     width: 100%;
     position: relative;
@@ -543,13 +433,31 @@ padding-top: 2em;
 .image-10 {
     width: 600px;
 }
+.button-2 {
+    position: relative;
+    top: 38em;
+    left:21em;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color:white; 
+    color: black;
+    background-color: white;
+    width:18em;
+    height: 10em;
+}
 .contact {
     overflow: hidden;
     position: relative;
+    top:28em;
+    left:5em;
     margin-left: auto;
     margin-right: auto;
     width: 50em;
-    z-index: 5;
+    transition: all .5s linear;
+    opacity:0;
+}
+.js-contact-show {
+    opacity: 1;
 }
 }  
 @media only screen and (min-width: 60em) {
@@ -559,31 +467,6 @@ padding-top: 2em;
     top:8em;
     right:0;
     height: 30em;
-}
-.brand {
-    position: absolute;
-    top:6em;
-    transition: all .25s linear;
-    width: 30em;
-    left:45em;
-    margin: 1em;
-    transform: scale(1.5);
-}
-.brand a { 
-    color: #0074D9;
-    text-decoration: none;
-}
-.brand:hover { 
-    transform: scale(1.2);
-    transition: all 2s linear;
-}
-.brand:active{
-    opacity: 0;
-    transition:  1s alternate;
-}
-
-.brand-current:visited{
-    color:white;
 }
 .steve { 
     position: absolute;
@@ -617,22 +500,43 @@ padding-top: 2em;
     position: relative;
     top: 31em;
 }
-.button-2 {
-    width: 25em;
-    border: 0;
-    line-height: 0;
-    background-color: #2A0C59;
-    display: inline-block;
-    text-align: center;
-    transition: all .25s linear;
-    margin-left: 32em;
-    z-index: 20;
+.mini-steve {
+    position: relative;
+    top: 16em;
+    left: 57em;
+    width: 10em;
+    opacity:0;
+    display:block;
 }
-button-2 a:hover {
-    transition: all .5s linear;
-    background-color: #2A0C59;
+    .js-steve-animate { 
+    opacity: 1;    
+}
+ .button-2 {
+    position: relative;
+    top: 38em;
+    left:21em;
+    border-radius: 5%;
+    border-width: 1px;
+    border-color:white; 
     color: black;
+    background-color: white;
+    width:18em;
+    height: 10em;
 }
+.contact {
+    overflow: hidden;
+    position: relative;
+    top:6em;
+    left:5em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50em;
+    transition: all .5s linear;
+    opacity:0;
+}
+.js-contact-show {
+    opacity: 1;
+}  
 }
 
     
