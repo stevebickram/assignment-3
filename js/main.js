@@ -17,3 +17,10 @@ var $gallery = $('.gallery');
 $gallery.waypoint(function () {
     $gallery.addClass('js-gallery-animate');
 }, { offset: '50%'});
+
+var $btnCollapse2 = $('.btn-collapse-expand-2')
+var $box2 = $('.box2');
+
+$btnCollapse2.on('click', function () {
+    $box2.toggleClass('js-collapse-2');    
+});;
